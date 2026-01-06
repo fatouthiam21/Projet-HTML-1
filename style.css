@@ -1,0 +1,170 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    background-color: black;
+    color: aliceblue;
+  
+}
+.table{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid red;
+    /* position: fixed; */
+}
+/* .portfolio{
+    color: red;
+    
+} */
+h1{
+    padding: 0;
+    /* margin: 0; */
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+}
+
+ .ulnavfooter{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    margin-top: 10px;
+}
+a{
+    text-decoration: none;
+    padding: 10px 25px;
+    margin: 5px;
+    color: aliceblue;
+    border-radius: 8px;
+    transition: all 0.3s;  
+}
+nav a:hover, nav a.active{
+    background-color: red;
+    color: black;
+}
+.sec{
+    text-align: center;
+    background-image: url('imgs/téléchargement.jfif');
+    height: 220px;
+}
+.btn{
+    margin-top: 35px;
+}
+.btn a{
+    background-color: red;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+.partie{
+    background-color: rgb(30, 27, 27);
+    padding: 40px;
+    margin: 30px;
+}
+h2, h3, label{
+    color: red;
+}
+h2, td{
+    /* border-bottom: 1px solid rgba(218, 214, 214, 0.119); */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.172);
+}
+footer{
+    text-align: center;
+    border-top:  solid red;
+}
+footer a{
+    padding:2px 4px ;
+    margin: 0;
+}
+footer a:hover{
+    color: red;
+}
+
+.propos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.rigth{
+    margin: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.172);
+    background-color: rgb(30, 27, 27);
+}
+.left img{
+    padding: 50px;
+    border: 1px solid red;
+}
+
+.travail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+}
+.projet{
+    margin: 6px 10px;
+    border-radius: 8px;
+    text-align: center;  
+}
+.projet:hover{
+    transform: translateY(-5px);
+    border: 1px solid red;
+}
+.partie1, .cv1, form, .coor{
+    margin: 0;
+    /* height: 50%; */
+    background-color: rgb(30, 27, 27);
+    padding: 50px;
+}
+.partie2{
+    height: 50%;
+}
+
+.btn1{
+    margin: 15px 0;
+}
+.btn1 a, #envoyer{
+    background-color: red;
+    padding: 5px 15px;
+    border-radius: 6px;
+    color: black;
+}
+.btn1 a:hover, select{
+    color: white;
+}
+table{
+    width: 100%;
+}
+thead{
+    background-color: red;
+    color: black;
+}
+.cv1, form, .coor{
+    margin: 30px;
+}
+input, textarea, select{
+    background-color: rgb(30, 27, 27);
+    width: 100%;   
+}
+#envoyer{
+    width: 30%;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:760px) {
+    body{
+        font-size: 14px;
+    }
+    .table, .propos, .travail{
+        flex-direction: column;
+    }
+    a, .btn a, #envoyer{
+        padding: 4px 8px;
+    }
+    .cv1{
+        margin: 0;
+    }
+    #envoyer{
+        width: 100%;
+    }
+}
